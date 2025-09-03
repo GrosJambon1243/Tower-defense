@@ -7,13 +7,14 @@ public class Bullet : MonoBehaviour
     public Transform target;    
     void Start()
     {
-        
+       
     }
 
     
     void Update()
     {
-        transform.Translate(speed * Time.deltaTime * (target.position - transform.position).normalized);
+        //transform.Translate(speed * Time.deltaTime * (target.position - transform.position).normalized);
+        transform.Translate(Vector3.right*speed * Time.deltaTime);
 
     }
 }
