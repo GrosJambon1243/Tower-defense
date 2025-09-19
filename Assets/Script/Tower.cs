@@ -8,7 +8,7 @@ public class Tower : MonoBehaviour
 
     private CircleCollider2D circleCollider2D;
 
-    [SerializeField]private uint AtkRange;
+    [SerializeField] private uint AtkRange;
 
     void Awake()
     {
@@ -22,9 +22,15 @@ public class Tower : MonoBehaviour
         circleCollider2D.radius = AtkRange;
     }
 
-   
+
 
     void Update()
+    {
+        FiringBullet();
+    }
+
+
+    void FiringBullet()
     {
         AtkSpeed -= Time.deltaTime;
         if (AtkSpeed <= 0)
