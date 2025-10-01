@@ -37,7 +37,7 @@ public class Tower : MonoBehaviour
         {
             Instantiate(bullet, this.transform);
             AtkSpeed = AtkCooldown;
-            Debug.Log("Firing bullet");
+            //Debug.Log("Firing bullet");
         }
     }
 }
